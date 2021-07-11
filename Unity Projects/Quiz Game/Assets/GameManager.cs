@@ -28,6 +28,8 @@ private float timeBetweenQuestions = 1f;
 [SerializeField]
 private Animator animator;
 
+private VoiceControl voiceControl = new VoiceControl();
+
 void Start () 
 {
 
@@ -35,6 +37,8 @@ void Start ()
     {
       unansweredQuestions= questions.ToList<Question>();
     }
+
+    voiceControl.Start();
 
      SetCurrentQuestion();
   }
