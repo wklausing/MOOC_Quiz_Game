@@ -12,60 +12,60 @@ AssetImportWorker0
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64209
+49454
 Successfully changed project path to: /Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/Project/git/MOOC_Quiz_Game/Unity Projects/Quiz Game
 /Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/Project/git/MOOC_Quiz_Game/Unity Projects/Quiz Game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 40.05 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 43.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.13f1 (71691879b7f5)
 [Subsystems] Discovering subsystems at path /Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path /Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/Project/git/MOOC_Quiz_Game/Unity Projects/Quiz Game/Assets
 GfxDevice: creating device client; threaded=0
-2021-07-11 17:41:43.745 Unity[74504:8539524] (null) preferred device: Apple M1 (high power)
-2021-07-11 17:41:43.745 Unity[74504:8539524] Metal devices available: 1
-2021-07-11 17:41:43.745 Unity[74504:8539524] 0: Apple M1 (high power)
-2021-07-11 17:41:43.745 Unity[74504:8539524] Using device Apple M1 (high power)
+2021-07-11 19:50:06.142 Unity[76446:8619665] (null) preferred device: Apple M1 (high power)
+2021-07-11 19:50:06.142 Unity[76446:8619665] Metal devices available: 1
+2021-07-11 19:50:06.142 Unity[76446:8619665] 0: Apple M1 (high power)
+2021-07-11 19:50:06.142 Unity[76446:8619665] Using device Apple M1 (high power)
 Initializing Metal device caps: Apple M1
 Initialize mono
 Mono path[0] = '/Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = '/Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56504
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56446
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: /Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.032459 seconds.
+Registered in 0.001667 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 47.50 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 38.16 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.438 seconds
+- Completed reload, in  2.170 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011084 seconds.
+Registered in 0.003915 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 73.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 40.25 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  5.329 seconds
+- Completed reload, in  2.329 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launching external process: /Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.93 seconds
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.39 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2136 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 172.9 MB.
-System memory in use after: 172.8 MB.
+System memory in use before: 172.5 MB.
+System memory in use after: 172.5 MB.
 
 Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 2570.
-Total: 231.498750 ms (FindLiveObjects: 4.944791 ms CreateObjectMapping: 0.046875 ms MarkObjects: 215.714209 ms  DeleteObjects: 10.789084 ms)
+Total: 1.647083 ms (FindLiveObjects: 0.124625 ms CreateObjectMapping: 0.040250 ms MarkObjects: 1.369500 ms  DeleteObjects: 0.110666 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -81,61 +81,6 @@ AssetImportParameters requested are different than current active one (requested
 Received Import Request.
   path: Assets/VoiceControl.cs
   artifactKey: Guid(bebfb975637604d0c8e47e6c7b9a3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VoiceControl.cs using Guid(bebfb975637604d0c8e47e6c7b9a3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d8bed4a66b19efe243726ce08998f3') in 0.647299 seconds 
-  Import took 0.661508 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002530 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.961 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.38 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2131 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 177.4 MB.
-System memory in use after: 177.4 MB.
-
-Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 2574.
-Total: 1.978459 ms (FindLiveObjects: 0.496417 ms CreateObjectMapping: 0.040208 ms MarkObjects: 1.343833 ms  DeleteObjects: 0.097125 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 562.893567 seconds.
-  path: Assets/VoiceControl.cs
-  artifactKey: Guid(bebfb975637604d0c8e47e6c7b9a3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VoiceControl.cs using Guid(bebfb975637604d0c8e47e6c7b9a3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e64765781fb0999a0637b0485d62ab4') in 0.141407 seconds 
-  Import took 0.234666 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 450.848532 seconds.
-  path: Assets/VoiceControl.cs
-  artifactKey: Guid(bebfb975637604d0c8e47e6c7b9a3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VoiceControl.cs using Guid(bebfb975637604d0c8e47e6c7b9a3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e513888d2a51d43bb213d5556c3996') in 0.018694 seconds 
-  Import took 0.078257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.149362 seconds.
-  path: Assets/VoiceControl.cs
-  artifactKey: Guid(bebfb975637604d0c8e47e6c7b9a3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/VoiceControl.cs using Guid(bebfb975637604d0c8e47e6c7b9a3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75e513888d2a51d43bb213d5556c3996') in 0.001467 seconds 
-  Import took 0.009815 seconds .
+Start importing Assets/VoiceControl.cs using Guid(bebfb975637604d0c8e47e6c7b9a3c40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1edbe37f455103afe95bd2ab1f536821') in 0.278305 seconds 
+  Import took 0.280695 seconds .
 

@@ -19,7 +19,7 @@ public class VoiceControl : MonoBehaviour
         keywordRecognizer.Start();
     }
 
-    private void RecognizedSpeech(PhraeRecognizedEventArgs speech){
+    private void RecognizedSpeech(PhraseRecognizedEventArgs speech){
         Debug.log(speech.text);
 
         actions[speech.text].Invoke();
