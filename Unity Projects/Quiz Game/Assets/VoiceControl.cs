@@ -8,9 +8,11 @@ using UnityEngine.Windows.Speech;
 public class VoiceControl : MonoBehaviour
 {
     private KeywordRecognizer keywordRecognizer;
+
+    private GameManager gameManager;    
     private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
-    void Start()
+    public void Start()
     {
         actions.Add("True", TrueAction);
         actions.Add("False", FalseAction);
@@ -21,18 +23,18 @@ public class VoiceControl : MonoBehaviour
     }
 
     private void RecognizedSpeech(PhraseRecognizedEventArgs speech){
-        Debug.log(speech.text);
+        Debug.Log(speech.text);
 
         actions[speech.text].Invoke();
 
     }
 
     private void TrueAction(){
-        GameManager.UserSelectTrue();
+        gameManager.UserSelectTrue();
     }
 
     private void FalseAction(){
-        GameManager.UserSelectFalse();
+        gameManager.UserSelectFalse();
     }
 
 }
