@@ -1,9 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using UnityEngine.Windows.Speech;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,7 +30,8 @@ private float timeBetweenQuestions = 1f;
 [SerializeField]
 private Animator animator;
 
-private VoiceControl voiceControl = new VoiceControl();
+private KeywordRecognizer keywordRecognizer;
+private Dictionary<string, Action> actions = new Dictionary<string, Action>();
 
 void Start () 
 {
@@ -38,15 +41,20 @@ void Start ()
       unansweredQuestions= questions.ToList<Question>();
     }
 
-    voiceControl.Start();
+    actions.Add("True", UserSelectTrue);
+    actions.Add("False", UserSelectFalse);
 
-     SetCurrentQuestion();
+    keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
+    keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
+    keywordRecognizer.Start();
+
+    SetCurrentQuestion();
   }
 
   void SetCurrentQuestion()
   {
 
-    int randomQuestionIndex = Random.Range(0,unansweredQuestions.Count);
+    int randomQuestionIndex = UnityEngine.Random.Range(0,unansweredQuestions.Count);
     currentQuestion = unansweredQuestions[randomQuestionIndex];
 
     factText.text = currentQuestion.fact;
@@ -74,6 +82,12 @@ void Start ()
 
   }
 
+  private void RecognizedSpeech(PhraseRecognizedEventArgs speech){
+        Debug.Log(speech.text);
+
+        actions[speech.text].Invoke();
+
+   }
   
   public void UserSelectTrue()
   {
