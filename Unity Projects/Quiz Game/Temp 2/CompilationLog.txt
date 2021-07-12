@@ -1,0 +1,12 @@
+# Starting compiling UnityEngine.TestRunner.dll
+/Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-c87cbba859adc47e68a136a20b2942d6
+# Starting compiling UnityEditor.TestRunner.dll
+/Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-11fb6474d1bf64490a6dc6cd0ce1348b
+# Starting compiling Unity.VisualStudio.Editor.dll
+/Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-54c5ffd0eaadf45d6a5e59b11cc26f9f
+# Starting compiling Unity.Rider.Editor.dll
+/Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-a315a505d320848028c086442823fc46
+# Starting compiling Assembly-CSharp.dll
+/Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-d14e0ae347823447c995abd59a4206bf
+# Starting compiling Assembly-CSharp-Editor.dll
+/Users/vincentkelbel/Documents/Studium/Master/SS2021/MMOI/2020.3.13f1/Unity.app/Contents/Tools/RoslynScripts/unity_csc.sh /noconfig @Temp/UnityTempFile-bdef25f10bdec4bec81f763d26cc0e6d

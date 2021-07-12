@@ -11,10 +11,10 @@ public class VoiceControl : MonoBehaviour
 
     void Start()
     {
-        actions.Add('True', TrueAction);
-        actions.Add('False', FalseAction);
+        actions.Add("True", TrueAction);
+        actions.Add("False", FalseAction);
 
-        keywordRecognizer = new KeywordRecognizer(replys.Keys.ToArray());
+        keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
         keywordRecognizer.Start();
     }
@@ -27,11 +27,11 @@ public class VoiceControl : MonoBehaviour
     }
 
     private void TrueAction(){
-        //TODO: Call Function that is called when True Button is pressed;
+        GameManager.UserSelectTrue();
     }
 
     private void FalseAction(){
-        //TODO: Call Function that is called when False Button is pressed;
+        GameManager.UserSelectFalse();
     }
 
 }
