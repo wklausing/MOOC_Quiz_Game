@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.SceneManagement;
 using UnityEngine.Windows.Speech;
+using System.Threading;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public Question[] questions;
 private static List<Question> unansweredQuestions;
 
 private Question currentQuestion;
+
+private Boolean input;
 
 [SerializeField]
 private Text factText;
@@ -47,6 +50,8 @@ void Start ()
     keywordRecognizer = new KeywordRecognizer(actions.Keys.ToArray());
     keywordRecognizer.OnPhraseRecognized += RecognizedSpeech;
     keywordRecognizer.Start();
+
+    input = null;
 
     SetCurrentQuestion();
   }
@@ -91,35 +96,58 @@ void Start ()
   
   public void UserSelectTrue()
   {
-    animator.SetTrigger("True");
-    if(currentQuestion.isTrue)
-    {
-      Debug.Log("Correct!");
+    if(input == null){
+      input = true;
 
-    } else
-    {
-      Debug.Log("Wrong");
+      Thread.Sleep(1000);
+
+      if(input == true){
+        animator.SetTrigger("True");
+        if(currentQuestion.isTrue)
+        {
+          Debug.Log("Correct!");
+
+        } else
+        {
+          Debug.Log("Wrong");
+        }
+
+        StartCoroutine(TransitionToNextQuestion());
+        input = null;
+      }
+    } else if (input == false) {
+      Debug.Log("Conflicting Input");
+      input = null;
     }
-
-    StartCoroutine(TransitionToNextQuestion());
 
   }
 
   
   public void UserSelectFalse()
   {
-    animator.SetTrigger("False");
-    if(!currentQuestion.isTrue)
-    {
-      Debug.Log("Correct!");
 
-    } else
-    {
-      Debug.Log("Wrong");
+    if(input == null || input == false){
+      input = false;
+
+      Thread.Sleep(1000);
+
+      if(input == false){
+         animator.SetTrigger("False");
+        if(!currentQuestion.isTrue)
+        {
+          Debug.Log("Correct!");
+
+        } else
+        {
+          Debug.Log("Wrong");
+        }
+
+        StartCoroutine(TransitionToNextQuestion());
+      }
+    } else if (input == true) {
+      Debug.Log("Conflicting Input");
+      input = null;
     }
-
-     StartCoroutine(TransitionToNextQuestion());
-
   }
 
 }
